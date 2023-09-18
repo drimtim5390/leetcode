@@ -1,3 +1,5 @@
+package solving
+
 fun main() {
     val s = readln().split(" ").map { it.toInt() }
     println(minimumRightShifts(s))

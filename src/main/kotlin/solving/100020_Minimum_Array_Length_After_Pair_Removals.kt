@@ -1,3 +1,5 @@
+package solving
+
 import java.util.TreeMap
 
 fun main() {
