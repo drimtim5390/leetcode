@@ -1,4 +1,8 @@
 fun main() {
+    fun solve(s: String): Any {
+        return 1
+    }
+
     val s = readln()
     println(solve(s))
 
@@ -13,8 +17,3 @@ fun main() {
 //    }
 //    println(solve(matrix.toTypedArray()))
 }
-
-fun solve(S: String): Any {
-    return 1
-}
-

@@ -1,22 +1,22 @@
 package solving
 
-import solve
-
 fun main() {
     val s = readln()
-    println(solve(s))
+    println(inorderTraversal(null))
 }
 
 private fun inorderTraversal(root: TreeNode?): List<Int> {
     val result = mutableListOf<Int>()
 
-    fun traverseTree(node: TreeNode) {
-        node.left?.let { traverseTree(it) }
+    fun traverseTree(node: TreeNode?) {
+        if (node == null) return
+        traverseTree(node.left)
         result.add(node.`val`)
-        node.right?.let { traverseTree(it) }
+        traverseTree(node.right)
+
     }
 
-    root?.let { traverseTree(it) }
+    traverseTree(root)
     return result
 }
 
